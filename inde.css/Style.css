@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&family=Signika+Negative:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+--verde-escuro: D#14424b;
+--verde: D#2€9364;
+--orange: D#ff7c37;
+--degrade-btn: linear-gradient (O#fe9611, O#ff5c00);
+--color-p: •#alalal;
+--color-p-2: O#868585;
+}
+
+.background-verde{
+    background-color: #14424b;
+}
+
+footer {
+    display: flex;
+    color: white;
+
+}
+
+
+/* classe reutilizaveis */
+.container{
+    max-width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+section,
+footer{
+    padding: 2.7rem 0;
+
+}
+
+    .btn-gradiente{
+        padding: 12px 25px;
+        color: white;
+        border: none;
+        cursor: pointer;
+       background-color: #ff5c00;
+      
+    }
+   
+
+
+/* classes do site */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+
+}
+
+.ul li a{
+    color: white;
+}
+
+.img {
+            width: 100px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text{
+    width: 50%;
+    color: white;
+}
+
+.main-text h1{
+    font-size: 4.5rem;
+}
+
+.main-text div{
+    display: flex;
+    align-items:center;
+    margin-top: 25px;
+
+}
+
+
+.main-img{
+    width: 50%;
+}
+
+.main-img img{
+    width: 105%;
+}
+
+/* menu icon */
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+.resultados{
+    background-color:#fe9611;
+}
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.resultados .resultados-text{
+    color:white ;
+    font-size:1.6rem ;
+    font-weight: 600;
+    width: 50%;
+   
+}
+.resultados .resultados-numero{
+ display: flex;   
+ align-items: center;
+ justify-content: center;
+ color: white;
+
+}
+
+.resultados .resultados-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+   
+
+}
+.resultados .resultados-numero p span{
+   font-size: 30px;
+   font-weight: 600;
+
+   
+
+}
+
+.Diferencias {
+    display: flex;
+}
+
+.container_img {
+    padding: 28px;
+    text-align: left;
+  
+    
+}
+.container_img:hover{
+ box-shadow: 1px 1px 29px 0px rgba(235,230,235,1);
+
+
+}
+.container_img img {
+    width: 40%;
+    text-align: left;
+    
+}
+
+.container_img p {
+    margin-left: 46px;
+}
+
+.Titulo {
+    margin-left: 46px;
+}
+
+footer {
+    background-color: #14424b;
+}
+
+footer .redes{
+    width: 25%;
+    text-align: center;
+}
+ 
+footer{
+    align-items: center;
+    text-align: center;
+
+}
+  
+   
+.redes{
+    text-align: center;
+}
+
+footer {
+    background-color: #14424b;
+    display: flex;
+    flex-direction: column; /* Para alinhar os elementos verticalmente */
+    align-items: center; /* Para alinhar os elementos horizontalmente */
+   
+}
+
+footer .redes {
+    margin-top: auto; /* Move para o final do rodapé */
+}
+
+
+
+/* responsivo */
+@media (max-width: 960px){
+    .menu-icon{
+        display: block;
+
+    }
+    .ul{
+        position: fixed;
+     background:#14424b;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     left: 100%;
+     transition: 0.3s;
+     flex-direction: column;
+     justify-content: center;
+}
+.main-img{
+        display: none;
+    }
+
+}
+
+.ul li{
+    font-size: 20px;
+    margin: 20px ;
+}
+
+.ul.ativo{
+    left: 0;
+}

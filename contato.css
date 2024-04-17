@@ -1,0 +1,36 @@
+body{
+    color: white;
+    background-color:#14424b ;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+
+}
+
+h1 {
+    color: chocolate;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+.container {
+    text-align: center;
+    
+}
+.container img {
+    width: 45px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção original da imagem */
+}
